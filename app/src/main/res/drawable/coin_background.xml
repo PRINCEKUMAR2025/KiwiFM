@@ -1,0 +1,7 @@
+<!-- res/drawable/coin_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gold" />
+    <corners android:radius="16dp" />
+    <padding android:left="8dp" android:right="8dp" android:top="4dp" android:bottom="4dp" />
+    <elevation android:elevation="4dp"/>
+</shape>

@@ -1,0 +1,7 @@
+<!-- res/drawable/message_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#E0E0E0" /> <!-- Light gray background for messages -->
+    <corners android:radius="8dp" /> <!-- Rounded corners -->
+    <padding android:left="10dp" android:right="10dp" android:top="5dp" android:bottom="5dp" /> <!-- Padding inside the message -->
+</shape>

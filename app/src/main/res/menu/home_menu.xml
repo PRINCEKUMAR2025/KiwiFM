@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/ai_audio_book"
+        android:icon="@drawable/ai_audio_book"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/wallet"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/all_audio_books"
+        android:icon="@drawable/all_audio_books"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/chatbot"
+        android:icon="@drawable/chatbot"
+        app:showAsAction="always"/>
+
+</menu>

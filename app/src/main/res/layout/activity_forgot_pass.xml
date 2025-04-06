@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ForgotPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Forgot Your Password Reset Here"
+            android:gravity="center"
+            android:textColor="@color/pearl"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter your email"
+            android:importantForAutofill="no"
+            android:drawableLeft="@drawable/ic_baseline_account_circle"
+            android:inputType="textEmailAddress"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/pink"
+            android:visibility="invisible"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true">
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/buttonReset"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Reset"
+                android:textSize="17dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
