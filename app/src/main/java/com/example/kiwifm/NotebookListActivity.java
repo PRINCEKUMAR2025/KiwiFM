@@ -33,6 +33,7 @@ public class NotebookListActivity extends AppCompatActivity {
     private NotebookAdapter notebookAdapter;
     private List<Notebook> notebookList;
     private FloatingActionButton addNotebookFab;
+    private FloatingActionButton checkWallet;
     private ProgressBar progressBar;
     private TextView emptyTextView;
 
@@ -53,6 +54,7 @@ public class NotebookListActivity extends AppCompatActivity {
         // Initialize UI elements
         recyclerView = findViewById(R.id.notebooksRecyclerView);
         addNotebookFab = findViewById(R.id.addNotebookFab);
+        checkWallet=findViewById(R.id.check_wallet);
         progressBar = findViewById(R.id.progressBar);
         emptyTextView = findViewById(R.id.emptyTextView);
 
@@ -67,6 +69,13 @@ public class NotebookListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NotebookListActivity.this, CreateNotebookActivity.class));
+            }
+        });
+
+        checkWallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(NotebookListActivity.this, WalletActivity.class));
             }
         });
 

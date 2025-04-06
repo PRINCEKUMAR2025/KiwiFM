@@ -12,7 +12,7 @@
         android:id="@+id/contributeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add to Notebook"
+        android:text="Add to AudioBook"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contributeLabel"
-        tools:text="Notebook Title" />
+        tools:text="Audiobook Title" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/contentLayout"

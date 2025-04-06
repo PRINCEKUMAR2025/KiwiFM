@@ -21,7 +21,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class WalletActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
+
     FirebaseFirestore firestore;
     FirebaseAuth auth;
     TextView name, email, coin_view;
@@ -33,7 +33,6 @@ public class WalletActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet);
-        toolbar = findViewById(R.id.profile_toolbar);
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         coin_view = findViewById(R.id.tv_coin);
@@ -44,14 +43,6 @@ public class WalletActivity extends AppCompatActivity {
 
         fetchCurrentCoins();
 
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
     }
 
     private void fetchCurrentCoins() {

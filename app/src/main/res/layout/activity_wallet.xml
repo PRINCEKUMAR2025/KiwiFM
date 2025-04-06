@@ -7,17 +7,6 @@
     android:background="@color/white"
     tools:context=".WalletActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/profile_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/pink"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Wallet" />
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -29,7 +18,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toEndOf="@+id/Lottie"
-        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar"
         app:layout_constraintVertical_bias="0.0">
 
 
@@ -109,6 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:textColor="@color/black"
             android:textSize="40dp"
             android:id="@+id/tv_coin"/>
 

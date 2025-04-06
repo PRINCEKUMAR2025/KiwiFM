@@ -78,10 +78,10 @@ public class Notebook {
         }
 
         if (!fullContent.isEmpty()) {
-            fullContent += "\n\n";
+            fullContent += ". ";
         }
 
-        fullContent += newContent + "\n-- Contributed by: " + contributorEmail;
+        fullContent += newContent;
     }
 
     public List<Contribution> getContributions() {
@@ -92,5 +92,4 @@ public class Notebook {
         this.contributions = contributions;
     }
 }
-
 

@@ -12,7 +12,7 @@
         android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create New Notebook"
+        android:text="Create New Audiobook"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:hint="Notebook Title"
+        android:hint="Audiobook Title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleLabel">
